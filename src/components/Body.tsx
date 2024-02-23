@@ -1,6 +1,7 @@
 import React from "react";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
+import StocksComponent from './ui/Stocks';
 
 const Main: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const Main: React.FC = () => {
             FiN4NCe Screener
           </h1>
           <br />
-          <p className="mx-auto  text-xl font-normal leading-relaxed text-gray-600 dark:text-gray-300 lg:w-2/3">
+          <p className="mx-auto text-xl font-normal leading-relaxed text-gray-600 dark:text-gray-300 lg:w-2/3">
             made with{" "}
             <a href="https://react.dev/" className="underline">
               React
@@ -22,7 +23,7 @@ const Main: React.FC = () => {
       </div>
       <div className="container flex flex-col items-center justify-center py-8 mx-auto rounded-lg md:p-1 p-3">
         <div className="h-[600px] object-cover object-center w-full mb-10 border-gray-200 dark:border-gray-900 g327 border rounded-lg shadow-md">
-          
+          <StocksComponent />
         </div>
       </div>
       <section className="text-gray-600 body-font">
